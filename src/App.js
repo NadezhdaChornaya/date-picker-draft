@@ -41,7 +41,7 @@ function App() {
                   setTextDataFormValue('dateOfReview', e.target.value)
                 }}
                 onBlur={e => {
-                    // e.target.defaultValue = ''
+                    e.target.defaultValue = ''
                     validateDate()
                 }}
                 onFocus={e =>  e.target.defaultValue = ''}
