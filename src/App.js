@@ -37,6 +37,7 @@ function App() {
                   e.target.defaultValue = ''
                   setTextDataFormValue('dateOfReview', e.target.value)
                 }}
+                onBlur={e => {e.target.defaultValue = ''}}
             />
           </div>
         </header>
