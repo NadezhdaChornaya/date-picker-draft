@@ -16,6 +16,9 @@ function App() {
     setDateOfReviewInputValue({ ...dateOfReviewInputValue, value: dateFormatted })
   }
 
+  const validateDate = () => {
+      console.log('Nadiia')}
+
   return (
       <div className="App">
         <header className="App-header">
@@ -37,7 +40,11 @@ function App() {
                   e.target.defaultValue = ''
                   setTextDataFormValue('dateOfReview', e.target.value)
                 }}
-                onBlur={e => {e.target.defaultValue = ''}}
+                onBlur={e => {
+                    // e.target.defaultValue = ''
+                    validateDate()
+                }}
+                onFocus={e =>  e.target.defaultValue = ''}
             />
           </div>
         </header>
